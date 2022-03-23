@@ -6,10 +6,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Forms\Notification-form.html" />
     <None Remove="Processes\fundtransfer.bpmn" />
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="Forms\Notification-form.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
     <EmbeddedResource Include="Processes\fundtransfer.bpmn">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
