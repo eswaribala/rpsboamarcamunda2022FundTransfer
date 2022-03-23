@@ -10,7 +10,7 @@ namespace FundTransfer.Models
     {
         NEFT,RTGS
     }
-    public class FundTransfer
+    public class FundTransferModel
     {
         public long CustomerId { get; set; }
         public long FromAccountNo { get; set; }
