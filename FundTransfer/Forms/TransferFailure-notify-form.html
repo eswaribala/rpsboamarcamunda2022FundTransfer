@@ -1,0 +1,92 @@
+﻿<h1>Fund Transfer Failure Notification</h1>
+<form class="form-horizontal">
+    <div class="control-group">
+        <label class="control-label">Customer Id </label>
+        <div class="controls">
+            <input type="number"
+                   cam-variable-name="customerId"
+                   cam-variable-type="Long"
+                   required
+                   readonly
+                   class="form-control" />
+        </div>
+    </div>
+    <div class="control-group">
+        <label class="control-label">Fund Transfer Date</label>
+        <div class="controls">
+            <p class="input-group">
+                <input type="text"
+                       cam-variable-name="currentDate"
+                       cam-variable-type="String"
+                       readonly
+                       class="form-control" />
+
+
+            </p>
+        </div>
+    </div>
+
+    <div class="control-group">
+        <label class="control-label">From Account No</label>
+        <div class="controls">
+            <input type="number"
+                   readonly
+                   cam-variable-name="fromAccountNo"
+                   cam-variable-type="Long"
+                   required
+                   class="form-control" />
+        </div>
+    </div>
+    <div class="control-group">
+        <label class="control-label">To AccountNo</label>
+        <div class="controls">
+            <input type="number"
+                   readonly
+                   cam-variable-name="toAccountNo"
+                   cam-variable-type="Long"
+                   required
+                   class="form-control" />
+        </div>
+    </div>
+    <div class="control-group">
+        <label class="control-label">Amount</label>
+        <div class="controls">
+            <input type="number"
+                   cam-variable-name="amount"
+                   cam-variable-type="Long"
+                   required
+                   readonly
+                   class="form-control" />
+        </div>
+    </div>
+    <div class="control-group">
+        <label class="control-label">Mode</label>
+        <div class="controls">
+            <input type="text"
+                   readonly
+                   cam-variable-name="mode"
+                   cam-variable-type="String"
+                   required
+                   class="form-control" />
+        </div>
+    </div>
+    <div class="control-group">
+        <label class="control-label">Remarks</label>
+        <div class="controls">
+            <input type="text"
+                   readonly
+                   cam-variable-name="remarks"
+                   cam-variable-type="String"
+                   required
+                   class="form-control" />
+        </div>
+    </div>
+   <h4>Fund Transfer Failed due to mismatch in Beneficiary Account No</h4>
+    <script cam-script type="text/form-script">
+        $scope.open = function($event) {
+          $event.preventDefault();
+          $event.stopPropagation();
+
+        };
+    </script>
+</form>
